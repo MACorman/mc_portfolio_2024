@@ -1,15 +1,25 @@
-const NavBar = (props) => {
-  function handleSelectPage(e) {
-    const page = e.target.innerText.toLowerCase();
-    props.onSelectPage(page);
-  }
+import { useEffect, useState } from "react";
+const NavBar = () => {
+  const [showTopOfPage, setShowTopOfPage] = useState(false);
+  useEffect(() => {
+    const handleShowTopOfPage = () => {
+      window.pageYOffset > 300
+        ? setShowTopOfPage(true)
+        : setShowTopOfPage(false);
+    };
+
+    window.addEventListener("scroll", handleShowTopOfPage);
+    return () => {
+      window.removeEventListener("scroll", handleShowTopOfPage);
+    };
+  }, []);
   return (
-    <div>
-      <span onClick={handleSelectPage}>Home</span>
-      <span onClick={handleSelectPage}>About</span>
-      <span onClick={handleSelectPage}>Projects</span>
-      <span onClick={handleSelectPage}>Blog</span>
-      <span onClick={handleSelectPage}>Contact</span>
+    <div className="nav-bar">
+      <a href="#contact">Contact</a>
+      <a href="#blog">Blog</a>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      {showTopOfPage && <a href="#home">Home</a>}
     </div>
   );
 };

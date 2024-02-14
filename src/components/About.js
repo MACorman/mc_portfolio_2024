@@ -1,7 +1,7 @@
 const About = () => {
   return (
     <>
-      <h1>About</h1>
+      <h1 id="about">About</h1>
       <p>
         I am a Chicago-based full-stack software engineer with an eye for detail
         and desire to know more. While working primarily in Ruby and JavaScript

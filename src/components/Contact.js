@@ -1,7 +1,7 @@
 const Contact = () => {
   return (
     <>
-      <h1>Contact</h1>
+      <h1 id="contact">Contact</h1>
       <p>Interested in getting in touch?</p>
       <a href="mailto:madelinecorman@gmail.com">Send me an email!</a>
       <p>Or connect with me on the following platforms:</p>

@@ -5,23 +5,23 @@ import Contact from "./components/Contact";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Blog from "./components/Blog";
-import { useState } from "react";
+// import { useState } from "react";
 
 function App() {
-  const [selectedPage, setSelectedPage] = useState("home");
+  // function handleSelectedPage(page) {
+  //   window.location.replace(`/#${page}`);
+  // }
 
-  function handleSelectedPage(page) {
-    setSelectedPage(page);
-    console.log(page);
-  }
   return (
     <div className="App">
-      <NavBar onSelectPage={handleSelectedPage} />
-      {selectedPage === "home" && <FrontPage />}
-      {selectedPage === "about" && <About />}
-      {selectedPage === "projects" && <Projects />}
-      {selectedPage === "blog" && <Blog />}
-      {selectedPage === "contact" && <Contact />}
+      <NavBar />
+      <div className="page-container">
+        <FrontPage />
+        <About />
+        <Projects />
+        <Blog />
+        <Contact />
+      </div>
     </div>
   );
 }

@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 const NavBar = (props) => {
   function handleSelectPage(e) {
     const page = e.target.innerText.toLowerCase();

@@ -2,8 +2,8 @@ import Carousel from "react-bootstrap/Carousel";
 
 export default function Projects() {
   return (
-    <div>
-      <h1 id="projects">Projects</h1>
+    <div id="projects" className="projects-container">
+      <h2>Projects</h2>
       <Carousel data-bs-theme="dark" controls={false} fade>
         <Carousel.Item interval={5000}>
           <img

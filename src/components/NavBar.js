@@ -3,7 +3,7 @@ const NavBar = () => {
   const [showTopOfPage, setShowTopOfPage] = useState(false);
   useEffect(() => {
     const handleShowTopOfPage = () => {
-      window.pageYOffset > 300
+      window.pageYOffset > 500
         ? setShowTopOfPage(true)
         : setShowTopOfPage(false);
     };

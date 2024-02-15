@@ -17,7 +17,7 @@ export default function Blog() {
 
   return (
     <div className="blog-container" id="blog">
-      <h1>Blog</h1>
+      <h2>Blog</h2>
       {blogPosts.map((post) => (
         <BlogPost post={post} />
       ))}

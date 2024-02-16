@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <div id="contact" className="contact-container">
+    <div className="contact-container">
       <h2>Contact</h2>
       <div className="contact-email">
         <p>Interested in getting in touch?</p>
@@ -8,7 +8,7 @@ const Contact = () => {
       </div>
       <div className="contact-social">
         <p>Or connect with me on the following platforms:</p>
-        <span>
+        <span id="contact">
           <a
             href="https://www.linkedin.com/in/madeline-corman/"
             target="_blank"

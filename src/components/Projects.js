@@ -1,46 +1,45 @@
+import projects from "../ProjectData";
 import Carousel from "react-bootstrap/Carousel";
+import YouTube from "react-youtube";
 
 export default function Projects() {
   return (
     <div id="projects" className="projects-container">
       <h2>Projects</h2>
-      <Carousel data-bs-theme="dark" controls={false} fade>
-        <Carousel.Item interval={5000}>
-          <img
-            className="d-block w-100"
-            src="https://www.saberhealth.com/uploaded/blog/images/Oranges.jpg"
-            alt="First slide"
-          />
-          <Carousel.Caption>
-            <h5>First slide label</h5>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item interval={5000}>
-          <img
-            className="d-block w-100"
-            src="https://www.tastingtable.com/img/gallery/are-oranges-named-after-the-color/l-intro-1666984048.jpg"
-            alt="Second slide"
-          />
-          <Carousel.Caption>
-            <h5>Second slide label</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item interval={5000}>
-          <img
-            className="d-block w-100"
-            src="https://drizzlemeskinny.com/wp-content/uploads/2023/04/shutterstock_1014021409-scaled.jpg"
-            alt="Third slide"
-          />
-          <Carousel.Caption>
-            <h5>Third slide label</h5>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
+      <div className="projects-carousel">
+        <Carousel data-bs-theme="dark" controls={false} indicators={false}>
+          {projects.map((project) => (
+            <Carousel.Item interval={3000}>
+              {project.demo ? (
+                <YouTube
+                  className="youtube-embed"
+                  videoId={project.demo}
+                  opts={{ height: "600", width: "1000" }}
+                />
+              ) : (
+                <img
+                  className="d-block w-100"
+                  src={require(`../${project.image}.png`)}
+                  alt="NutriPal"
+                />
+              )}
+              <div className="project-caption">
+                <Carousel.Caption>
+                  <h5>{project.name}</h5>
+                  <p>{project.description}</p>
+                  <span>
+                    <a href={project.frontend}>Frontend</a>
+                  </span>
+                  <span> | </span>
+                  <span>
+                    <a href={project.backend}>Backend</a>
+                  </span>
+                </Carousel.Caption>
+              </div>
+            </Carousel.Item>
+          ))}
+        </Carousel>
+      </div>
     </div>
   );
 }

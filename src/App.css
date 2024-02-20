@@ -14,6 +14,11 @@ body a {
   color: #9fb15d;
 }
 
+body a:hover {
+  color: #6c783e;
+  cursor: pointer;
+}
+
 .App {
   font-family: "Questrial", sans-serif;
   font-weight: 200;
@@ -50,6 +55,9 @@ body a {
 
 .blog-container {
   padding-top: 80px;
+  padding-left: 35px;
+  padding-right: 35px;
+  margin-bottom: 40px;
 }
 
 .frontpage-container {
@@ -85,6 +93,7 @@ body a {
   padding-right: 35px;
   padding-top: 80px;
   display: flex;
+  margin-bottom: 40px;
 }
 
 .about-container li {
@@ -121,6 +130,7 @@ body a {
   padding-top: 80px;
   padding-left: 35px;
   padding-right: 35px;
+  margin-bottom: 20px;
 }
 
 .projects-container h2 {
@@ -149,4 +159,40 @@ body a {
 
 .project-caption p {
   color: #293400;
+}
+
+.blog-container h2 {
+  padding-left: 30px;
+}
+
+.blog-container-child {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.blog-post {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 45%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 20px;
+  padding-top: 20px;
+  box-shadow: 7px 7px 5px #ebf4c7;
+  border-radius: 10px;
+  background-color: #faffdf;
+}
+
+.blog-post a {
+  font-size: 1.25rem;
+}
+
+.blog-post img {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }

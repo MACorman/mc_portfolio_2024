@@ -1,7 +1,7 @@
 const Contact = () => {
   return (
     <div className="contact-container">
-      <h2>Contact</h2>
+      <h2>C o n t a c t</h2>
       <div className="contact-email">
         <p>Interested in getting in touch?</p>
         <a href="mailto:madelinecorman@gmail.com">SEND ME AN EMAIL</a>

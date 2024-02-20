@@ -2,7 +2,7 @@ const About = () => {
   return (
     <div className="about-container" id="about">
       <div className="about-container-child">
-        <h2>About</h2>
+        <h2>A b o u t</h2>
         <p>
           I am a Chicago-based full-stack software engineer with an eye for
           detail and desire to know more. While working primarily in Ruby and
@@ -13,7 +13,7 @@ const About = () => {
         </p>
       </div>
       <div className="about-container-child">
-        <h2>Technologies</h2>
+        <h2>T e c h n o l o g i e s</h2>
         <ul>
           <li>Ruby</li>
           <li>Rails</li>

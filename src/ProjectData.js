@@ -20,7 +20,7 @@ const projects = [
     demo: null,
   },
   {
-    name: "Forbes App Clone",
+    name: "Forbes Mobile App Clone",
     description:
       "A clone of the Forbes mobile app featuring the latest news stories and videos from Forbes, as well as the ability to purchase issues of the magazine.",
     image: "forbes",

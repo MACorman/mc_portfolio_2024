@@ -1,8 +1,35 @@
 import projects from "../ProjectData";
 import Carousel from "react-bootstrap/Carousel";
 import YouTube from "react-youtube";
+import { useState, useEffect } from "react";
 
 export default function Projects() {
+  const [size, setSize] = useState(["600", "1000"]);
+
+  useEffect(() => {
+    const updateWindowSize = () => {
+      // maybe do something like if window less than XXX set size to [XXX, XXXX]
+      if (window.innerWidth < 1200) {
+        setSize(["400", "800"]);
+      }
+      if (window.innerWidth < 992) {
+        setSize(["300", "650"]);
+      }
+      if (window.innerWidth < 768) {
+        setSize(["200", "600"]);
+      }
+      if (window.innerWidth < 600) {
+        setSize(["50", "100"]);
+      }
+    };
+
+    window.addEventListener("resize", updateWindowSize);
+    return () => {
+      window.removeEventListener("resize", updateWindowSize);
+    };
+  }, []);
+
+  console.log(size);
   return (
     <div id="projects" className="projects-container">
       <h2>P r o j e c t s</h2>
@@ -14,7 +41,10 @@ export default function Projects() {
                 <YouTube
                   className="youtube-embed"
                   videoId={project.demo}
-                  opts={{ height: "600", width: "1000" }}
+                  opts={{
+                    height: size[0],
+                    width: size[1],
+                  }}
                 />
               ) : (
                 <img

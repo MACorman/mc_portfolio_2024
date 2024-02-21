@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import BlogPost from "./BlogPost";
 import blogPosts from "../BlogData";
 

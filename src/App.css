@@ -196,3 +196,60 @@ body a:hover {
   margin-bottom: 20px;
   margin-top: 20px;
 }
+
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-bar {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    float: right;
+    position: relative;
+  }
+
+  .hamburger li {
+    list-style-type: none;
+  }
+
+  .frontpage-container {
+    display: block;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .frontpage-child {
+    text-align: center;
+  }
+
+  /* .frontpage-child p {
+  } */
+
+  .frontpage-child h1 {
+    font-size: 5.3rem;
+    text-align: center;
+    font-family: "Tenor Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .about-container {
+    display: block;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 80px;
+    margin-bottom: 40px;
+  }
+
+  .about-container-child {
+    text-align: center;
+  }
+
+  .projects-container h2 {
+    text-align: center;
+  }
+}

@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
 
 const NavBar = () => {
   const [showTopOfPage, setShowTopOfPage] = useState(false);
@@ -33,6 +35,32 @@ const NavBar = () => {
       </div>
       <div className="hamburger">
         <RxHamburgerMenu onClick={handleShowHamburger} />
+        <Menu
+          open={openHamburger}
+          anchorOrigin={{ vertical: "top", horizontal: "right" }}
+          transformOrigin={{ vertical: "top", horizontal: "right" }}
+        >
+          <div className="menu">
+            <MenuItem onClick={handleShowHamburger}>
+              <a href="#home">Home</a>
+            </MenuItem>
+            <MenuItem onClick={handleShowHamburger}>
+              <a href="#about">About</a>
+            </MenuItem>
+            <MenuItem onClick={handleShowHamburger}>
+              <a href="#projects">Projects</a>
+            </MenuItem>
+            <MenuItem onClick={handleShowHamburger}>
+              <a href="#blog">Blog</a>
+            </MenuItem>
+            <MenuItem onClick={handleShowHamburger}>
+              <a href="#contact">Contact</a>
+            </MenuItem>
+          </div>
+        </Menu>
+      </div>
+      {/* <div className="hamburger">
+        <RxHamburgerMenu onClick={handleShowHamburger} />
         {openHamburger && (
           <ul>
             <li>
@@ -62,7 +90,7 @@ const NavBar = () => {
             </li>
           </ul>
         )}
-      </div>
+      </div> */}
     </>
   );
 };

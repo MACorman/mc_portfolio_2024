@@ -279,6 +279,12 @@ body a:hover {
   }
 }
 
+@media screen and (max-width: 906px) {
+  #nutripal {
+    padding-bottom: 25px;
+  }
+}
+
 @media screen and (max-width: 869px) {
   .blog-container-child {
     justify-content: center;
@@ -370,20 +376,62 @@ body a:hover {
   }
 
   .youtube-embed {
-    margin-bottom: -5px;
+    margin-bottom: 15px;
   }
 
   .project-caption {
-    padding-top: 220px;
+    padding-top: 200px;
   }
-
-  /* .projects-caption h5:nth-child(2) {
-    margin-top: -10px;
-  } */
 }
 
-@media screen and (max-width: 705px) {
-  /* progjects carousel breaks */
+@media screen and (max-width: 750px) {
+  #forbes {
+    padding-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 702px) {
+  #nutripal {
+    padding-bottom: 49px;
+  }
+}
+
+@media screen and (max-width: 634px) {
+  .youtube-embed {
+    padding-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 609px) {
+  #forbes {
+    padding-bottom: 50px;
+  }
+}
+
+/* 599 is where youtube embed breaks */
+
+@media screen and (max-width: 587px) {
+  #nutripal {
+    padding-bottom: 75px;
+  }
+}
+
+@media screen and (max-width: 541px) {
+  .youtube-embed {
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 513px) {
+  #nutripal {
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 507px) {
+  #forbes {
+    padding-bottom: 75px;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -414,5 +462,65 @@ body a:hover {
 @media screen and (max-width: 405px) {
   .about-container-child h2:nth-child(1) {
     font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 494px) {
+  #forbes {
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 464px) {
+  .youtube-embed {
+    padding-bottom: 75px;
+  }
+}
+
+@media screen and (max-width: 433px) {
+  #forbes {
+    padding-bottom: 120px;
+  }
+}
+
+@media screen and (max-width: 432px) {
+  #nutripal {
+    padding-bottom: 120px;
+  }
+}
+
+@media screen and (max-width: 406px) {
+  #nutripal {
+    padding-bottom: 145px;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .youtube-embed {
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 386px) {
+  #forbes {
+    padding-bottom: 145px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .youtube-embed {
+    padding-bottom: 125px;
+  }
+}
+
+@media screen and (max-width: 366px) {
+  #nutripal {
+    padding-bottom: 170px;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  #nutripal {
+    padding-bottom: 195px;
   }
 }

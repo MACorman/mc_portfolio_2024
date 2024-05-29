@@ -19,7 +19,10 @@ export default function Projects() {
         setSize(["200", "600"]);
       }
       if (window.innerWidth < 600) {
-        setSize(["50", "100"]);
+        setSize(["200", "400"]);
+      }
+      if (window.innerWidth < 400) {
+        setSize(["150", "240"]);
       }
     };
 
@@ -48,6 +51,7 @@ export default function Projects() {
                 />
               ) : (
                 <img
+                  id={project.image}
                   className="d-block w-100"
                   src={require(`../${project.image}.png`)}
                   alt={project.image}

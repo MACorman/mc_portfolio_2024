@@ -450,7 +450,7 @@ body a:hover {
 @media screen and (max-width: 500px) {
   .frontpage-container {
     display: block;
-    padding-top: 100px;
+    padding-top: 150px;
     padding-bottom: 100px;
   }
 

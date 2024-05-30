@@ -223,6 +223,10 @@ body a:hover {
 }
 
 @media screen and (max-width: 1200px) {
+  body {
+    overscroll-behavior: none;
+  }
+
   .frontpage-container {
     display: block;
     padding-top: 150px;
@@ -446,8 +450,8 @@ body a:hover {
 @media screen and (max-width: 500px) {
   .frontpage-container {
     display: block;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 
   .frontpage-child {

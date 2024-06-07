@@ -42,9 +42,6 @@ const NavBar = () => {
         >
           <div className="menu">
             <MenuItem onClick={handleShowHamburger}>
-              <a href="#home">Home</a>
-            </MenuItem>
-            <MenuItem onClick={handleShowHamburger}>
               <a href="#about">About</a>
             </MenuItem>
             <MenuItem onClick={handleShowHamburger}>

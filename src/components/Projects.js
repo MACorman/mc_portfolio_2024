@@ -8,7 +8,6 @@ export default function Projects() {
 
   useEffect(() => {
     const updateWindowSize = () => {
-      // maybe do something like if window less than XXX set size to [XXX, XXXX]
       if (window.innerWidth < 1400) {
         setSize(["510", "920"]);
       }

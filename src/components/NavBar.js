@@ -9,7 +9,7 @@ const NavBar = () => {
 
   useEffect(() => {
     const handleShowTopOfPage = () => {
-      window.pageYOffset > 500
+      window.pageYOffset > 600
         ? setShowTopOfPage(true)
         : setShowTopOfPage(false);
     };
@@ -56,38 +56,6 @@ const NavBar = () => {
           </div>
         </Menu>
       </div>
-      {/* <div className="hamburger">
-        <RxHamburgerMenu onClick={handleShowHamburger} />
-        {openHamburger && (
-          <ul>
-            <li>
-              <a href="#home" onClick={handleShowHamburger}>
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#about" onClick={handleShowHamburger}>
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#projects" onClick={handleShowHamburger}>
-                Projects
-              </a>
-            </li>
-            <li>
-              <a href="#blog" onClick={handleShowHamburger}>
-                Blog
-              </a>
-            </li>
-            <li>
-              <a href="#contact" onClick={handleShowHamburger}>
-                Contact
-              </a>
-            </li>
-          </ul>
-        )}
-      </div> */}
     </>
   );
 };

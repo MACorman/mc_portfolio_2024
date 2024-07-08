@@ -2,7 +2,9 @@ const About = () => {
   return (
     <div className="about-container" id="about">
       <div className="about-container-child">
-        <img src="./headshot.png" alt="headshot" />
+        <div className="headshot-container">
+          <img src="./headshot.png" alt="headshot" />
+        </div>
         <h2>A b o u t</h2>
         <p>
           I am a Chicago-based full-stack software engineer with an eye for

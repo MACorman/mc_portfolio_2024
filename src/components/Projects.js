@@ -8,6 +8,21 @@ export default function Projects() {
 
   useEffect(() => {
     const updateWindowSize = () => {
+      if (window.innerWidth < 2000) {
+        setSize(["760", "1380"]);
+      }
+      if (window.innerWidth < 1900) {
+        setSize(["710", "1280"]);
+      }
+      if (window.innerWidth < 1800) {
+        setSize(["660", "1180"]);
+      }
+      if (window.innerWidth < 1700) {
+        setSize(["610", "1080"]);
+      }
+      if (window.innerWidth < 1600) {
+        setSize(["560", "1000"]);
+      }
       if (window.innerWidth < 1400) {
         setSize(["510", "920"]);
       }

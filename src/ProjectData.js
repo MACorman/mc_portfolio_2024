@@ -27,7 +27,7 @@ const projects = [
     frontend: "https://github.com/MACorman/forbes_clone_frontend",
     backend: "https://github.com/MACorman/forbes_backend",
     url: null,
-    demo: null,
+    demo: "jzqT3gA2z1Y",
   },
   // {
   //   name: `Bill and Ted's Excellent SuperStore`,
